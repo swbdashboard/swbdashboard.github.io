@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Dashboard</title>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css"  media="screen,projection"/>
+      <!-- local css styles -->
+      <link type="text/css" rel="stylesheet" href="assets/css/dashboard.css"  media="screen,projection"/>
+      <!-- Linear Icons -->
+      <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+      <!-- FontAwesome Icons -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+      <!--Scripts-->
+      <script src="https://use.fontawesome.com/5ece8ef603.js"></script>
+    </head>
+    <body>
+      <section style="margin-top: 60px; margin-bottom: 60px; margin-right: 120px; margin-left: 120px;background-color: #ffffff; height: 100%; border-radius: 2px; box-shadow: rgba(0, 0, 0, 0.2) 0 20px 40px 0px;">
+        <header>
+          <nav>
+            <div class="nav-wrapper center">
+              <!--<a href="#" class="brand-logo"><img src="assets/img/sw-logo.png" style="margin: 5px; height: 50px; margin-left: 20px;" /></a>-->
+              <ul class="right hide-on-med-and-down">
+                <li><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i></a></li>
+                <li><a href="projects.html"><i class="fas fa-file"></i></a></li>
+                <li><a href="library.html"><i class="far fa-images"></i></a></li>
+                <li><a href="role.html"><i class="fas fa-align-center"></i></a></li>
+                <li><a href="settings.html"><i class="fas fa-cog"></i></a></li>
+                <li><a class="dropdown-trigger" href="#" data-target="noti"><i class="fas fa-bell"></i></a></li>
+                <li><a class="dropdown-trigger" href="#" data-target="user"><i class="fas fa-user"></i></a></li>
+              </ul>
+              <!-- Dropdown Structure -->
+              <ul id="user" class="dropdown-content">
+                <li>
+                  <img src="assets/img/avatar.png" style="height: 100px !important; display: block; margin: 0 auto;" class="circle center responsive-img" />
+                  <p class="white-text" style="text-align: center;">User Name<p>
+                  </li>
+                <li>
+                  <div style="margin: 10px;">
+                    <div class="left">
+                      <a class="btn-small" style="background-color: #fff; color: #000;" href="#!">Profile</a>
+                    </div>
+                    <div class="right">
+                      <a class="btn-small" style="background-color: #fff; color: #000;" href="#!">Logout</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul id="noti" class="dropdown-content">
+                <li><a href="#!">one</a></li>
+                <li><a href="#!">two</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">three</a></li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+        <section style="margin-top: 1px;">
+          <div style="margin: 24px;">
+            <h5 style="color: #545762;">Dashboard</h5>
+            <p style="color: #8995a5; font-size: 12px;"><i class="fa fa-map-marker" style="margin-right: 10px;"></i>College Name - <span style="color: #56bdf8;">Location</span></p>
+          </div>
+          <div class="container">
+            <!-- TABS -->
+            <div>
+              <div class="row">
+                <div class="col s12">
+                  <ul class="tabs">
+                    <li class="tab col s6"><a class="active" href="#template">Template</a></li>
+                    <li class="tab col s6"><a href="#contribution">Contribution</a></li>
+                  <!--  <li class="tab col s3"><a href="#secondary">Secondary</a></li>
+                    <li class="tab col s3"><a href="#recents">Recents</a></li> -->
+                  </ul>
+                </div>
+              </div>
+
+              <!-- *****///// TABS CONTENT  \\\\\***** -->
+
+              <div>
+                <div id="template" class="col s12">
+                    <div class="row">
+                      <div class="col s12 center">
+                            <span class="template-title">BMSIT TEMPLATE</span>
+                            <div class="box" style="margin-top: 20px;">
+                              <a href="#"><i class="material-icons left">keyboard_arrow_left</i></a>
+                              <img class="responsive-img" src="assets/img/1.svg" style="height: 400px; vertical-align:middle" />
+                              <a href="#"><i class="material-icons right">keyboard_arrow_right</i></a>
+                            </div>
+                      </div>
+                    </div>
+                </div>
+                <div id="contribution">
+                  <div class="row">
+                    <!-- Primary -->
+                    <div class="col s12">
+                            <div class="row" id="progress-content">
+                              <div class="col s8">
+                                <div class="card">
+                                  <div class="card-panel" id="pro">
+                                    <div class="row">
+                                      <div class="col s6">
+                                        <img src="assets/img/cup.svg" style="height: 200px;" />
+                                      </div>
+
+                                      <div class="col s6" id="profile-section" style="margin-top: 20px;">
+                                        <p class="white-text">You're just few steps away from completing your Profile</p>
+                                        <div style="margin-top: 5px;">
+                                          <a href="#" class="btn-large white black-text hoverable">Continue<i style="font-size: 14px; margin-left: 8px;" class="fas fa-arrow-right"></i></a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col s4">
+                                    <div class="card-panel" id="poll">
+                                      <h5 class="white-text">Create a new poll</h5>
+                                      <p>Create a new Poll</p>
+                                      <div>
+                                        <a href="#" class="btn-large white-text hoverable" style="background-color: #1874f2;">Create<i style="font-size: 14px; margin-left: 8px;" class="fas fa-plus"></i></a>
+                                      </div>
+                                    </div>
+                              </div>
+                          </div>
+                          <div class="charts">
+                            <h5 style="color: #545762;"><i class="far fa-chart-bar" style="margin-right: 8px;"></i>Polls</h5>
+                            <div class="chart-container">
+                              <canvas id="chart"></canvas>
+                            </div>
+                          </div>
+                    </div>
+                    <!-- Secondary -->
+                    <div class="col s12" id="event">
+                      <div>
+                        <h5 style="color: #545762;"><i class="fas fa-calendar-alt" style="margin-right: 8px;"></i>Activities</h5>
+                      </div>
+                      <div class="row white-text">
+                        <div class="col s6">
+                          <div class="card">
+                            <div class="card-panel">
+                              <h6>Utasha 2k19</h6>
+                              <a class="btn-large right">START</a>
+                              <p>Start uploading images now</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col s6">
+                          <div class="card">
+                            <div class="card-panel">
+                              <h6>Utasha 2k19</h6>
+                              <a class="btn-large right">START</a>
+                              <p>Start uploading images now</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <!-- Jquery -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+      <script src="assets/js/dashboard.js"></script>
+      <script>
+      $(document).ready(function(){
+        $('.modal').modal();
+        $(".dropdown-trigger").dropdown();
+        $('select').formSelect();
+        $('.datepicker').datepicker();
+        $('.tabs').tabs();
+      });
+      </script>
+    </body>
+  </html>

@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    margin: 0;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+body {
+  background: #2b5876;
+  background: -webkit-linear-gradient(to right, #4e4376, #2b5876);
+  background: linear-gradient(to right, #4e4376, #2b5876);
+  background-attachment: fixed;
+  font-family: "Open Sans", sans-serif;
+}
+html, body {
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: table
+}
+section {
+  background-color: #ffffff !important;
+  margin:0;
+  padding: 1px;
+}
+nav {
+    background-color: #ffffff00;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0), 1px 1px 1px 1px rgba(0, 0, 0, 0), 0 1px 0 0 rgba(0, 0, 0, 0.05);
+    line-height: 74px;
+    height: 74px;
+  }
+nav ul a {
+  color: #909baa;
+  font-size: 16px;
+  font-weight: 400;
+}
+nav ul a:hover {
+  background: #3aa4f7 !important;
+  /*background-image: linear-gradient(to right, #57bcb0, #2c6184 70%);*/
+  color: #ffffff;
+/*  -webkit-background-clip: text;*/
+  /*background-clip: text;*/
+  font-weight: 500;
+  /*color: #005bcc;*/
+  }
+
+nav ul a:focus {
+  outline: inherit;
+    /*color: #005bcc;*/
+  }
+
+nav ul li {
+  width: 74px !important;
+}
+
+.tabs .tab a {
+    color: rgb(143, 155, 170);
+}
+.tabs .indicator {
+    background: -webkit-linear-gradient(135deg, #49e3ce 0%, #9920ed 100%);
+}
+.tabs .tab a:hover, .tabs .tab a.active {
+    background-color: transparent;
+    color: #577edc;
+    font-weight: 600;
+}
+.tabs .tab a:focus, .tabs .tab a:focus.active {
+    background: -webkit-linear-gradient(135deg, #49e3ce1f 0%, #9920ed1a 100%);
+    outline: none;
+}
+.tab-content {
+  background-color: #ecf2f6;
+  height: 100%;
+}
+.circle {
+	width: 200px;
+    margin: 6px 20px 20px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+	vertical-align: top;
+}
+.circle	strong {
+		position: absolute;
+		top: 70px;
+		left: 0;
+		width: 100%;
+		text-align: center;
+		line-height: 45px;
+		font-size: 24px;
+	}
+.progress-bars {
+  background-color: #ffffff;
+}
+.progress-content {
+  padding: 80px;
+}
+.csv {
+  text-align: center;
+  margin-top: 20px;
+}
+.csv-upload {
+  display: inline-block;
+}
+
+.media-card .card-panel {
+  height: 150px;
+}
+
+.media-card .card-panel span {
+  margin: 0;
+  vertical-align: middle;
+  display: table-cell;
+}
+.media-card .facebook {
+  background-color: #4267b2;
+}
+.media-card .insta {
+  background: #8A2387;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.media-card .local {
+  background-color: #3f4651;
+}
+#master .card .card-reveal {
+  background-color: #fffffff5;
+}
+.box {
+  display: flex;
+  align-items:center;
+}
+.box img {
+  margin: 0 auto;
+}
+.box i {
+  font-size: 48px;
+  color: #587edc;
+}
+.template-title {
+  font-size: 24px;
+}
+
+/* Progress Bar */
+
+
+/* Chat.js */
+.chart-container {
+  position: relative;
+  margin: auto;
+  height: 40vh;
+  width: 100%;
+}
+
+#progress-content .card-panel#pro {
+/*  background: linear-gradient(to right, #F27121, #E94057, #8A2387); */
+  background-color: #1875f1;
+  box-shadow: 0 1px 0 0 rgba(0,0,0,0.14), 0 0 0 0 rgba(0,0,0,0.12), 0 0 0 0 rgba(0,0,0,0.2);
+}
+
+#progress-content .card-panel#poll {
+/*  background: linear-gradient(to right, #F27121, #E94057, #8A2387); */
+  background-color: #3f4551;
+  box-shadow: 0 1px 0 0 rgba(0,0,0,0.14), 0 0 0 0 rgba(0,0,0,0.12), 0 0 0 0 rgba(0,0,0,0.2);
+}
+
+#progress-content .progress .determinate {
+  background: linear-gradient(to right, #adbac5, #eef2f3); !important;
+}
+
+#progress-content .progress {
+    background-color: #b1b1b185;
+    height: 10px;
+    border-radius: 10px;
+  }
+#progress-content .card-panel p {
+      color: #fff;
+      font-size: 16px;
+  }
+#progress-content .card-panel  {
+        height: 260px;
+    }
+#event {
+  margin-top: 16px;
+}
+#event .card-panel {
+  background: radial-gradient(circle farthest-side at right bottom,#313233e0 34%,#0d0e0eeb 100%), url('../img/card-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#master a {
+  color: #8f8f8f ;
+}
